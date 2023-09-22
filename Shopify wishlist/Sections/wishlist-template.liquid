@@ -1,0 +1,13 @@
+<div class="wishlist">
+  <h1 class="wishlist_title">{{ page.title }}</h1><br/>
+</div>
+<div class="wishlist__grid" grid-wishlist>
+  {% comment %} Sample loading element {% endcomment %}
+  <p class="wishlist__loader full-width text-center">Loading...</p>
+</div>
+
+{% schema %}
+  {
+    "templates": ["page"]
+  }
+{% endschema %}

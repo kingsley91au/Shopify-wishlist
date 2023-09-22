@@ -1,0 +1,34 @@
+<div class="product-card wishlist__container">
+  <div class="wishlist_item_link">
+    <div class="list-view-item__image-column">
+      <div class="wishlist_image">
+        {% unless product.featured_media == null %}
+        <a class="wishlist_link" href="{{ product.url }}">
+          <img class="list-view-item__image" src="{{ product.featured_media | img_url: '129x129', scale: 2 }}" alt="{{ product.featured_media.alt }}">
+        </a>
+        {% endunless %}
+        <div class="wishlist_heart_btn">
+        {%- render 'button-wishlist', product: product -%}
+        </div>
+      </div>
+    </div>
+
+    <div class="list-view-item__title-column">
+      <div class="list-view-item__title" aria-hidden="true">
+        <a class="wishlist_title_link" href="{{ product.url }}">
+          <span class="wishlist__title">{{ product.title }}</span>
+        </a>
+      </div>
+    </div>
+        
+    <div class="list-view-item__price-column">
+      {% if product.compare_at_price > product.price %}
+      <p class="text--price">
+        <span class="price--compare strike-through">{{ product.compare_at_price | money }}</span> <span class="price--sale">{{ product.price | money }}</span>
+      </p>
+     {% else %}  
+      <p class="text--price">{{ product.price | money }}</p>
+     {% endif %}
+    </div>
+  </div>
+</div>

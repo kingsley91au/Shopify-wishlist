@@ -1,0 +1,37 @@
+{
+  "name": "Wish List",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "color",
+      "id": "heart_border_color",
+      "label": "Heart border colour",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "heart_color",
+      "label": "Heart colour",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Top Bar"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_wishlist_tp_text",
+      "label": "Show top bar wishlist text",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "tp_wishlist_text_colour",
+      "label": "Text colour",
+      "default": "#ffffff"
+    }
+  ]
+}

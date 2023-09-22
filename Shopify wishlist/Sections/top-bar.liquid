@@ -1,0 +1,9 @@
+<li class="top-bar_wishlist">
+    <a href="/pages/wishlist">
+        {%- render 'icon-heart' -%}
+        <span class="wishlist_count"></span>
+        {% if settings.show_wishlist_tp_text%}
+            <p style="margin:auto;padding-left:10px; color:{{settings.tp_wishlist_text_colour}}">Wishlist</p>
+        {% endif %}
+    </a>
+</li>

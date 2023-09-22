@@ -1,0 +1,8 @@
+{%- if product.handle != blank -%}
+<div class="wishlist_btn_container">
+  <button type="button" aria-label="Add to wishlist" class="wishlist_btn" button-wishlist data-product-handle="{{ product.handle }}">
+    {%- render 'icon-heart' -%}
+  </button>
+
+</div>
+{%- endif -%}

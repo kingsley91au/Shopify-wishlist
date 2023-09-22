@@ -1,0 +1,18 @@
+{
+    "name": "shopify-wishlist",
+    "version": "1.0.1",
+    "author": "Kingsley Gong",
+    "description": "For THF custom theme addon only",
+    "keywords": [
+      "shopify",
+      "theme",
+      "wishlist"
+    ],
+    "time-cost" : "16H",
+    "dependencies": {},
+    "devDependencies": {
+      "@shopify/themekit": "Turbo",
+      "themev": "^7.1.1"
+    }
+  }
+  
